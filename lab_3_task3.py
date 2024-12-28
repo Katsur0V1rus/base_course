@@ -11,14 +11,5 @@ x = x0 + v0x * t
 y = y0 + v0x * t - g * t**2 / 2
 
 for i in range(6):
-    mas = np.append(mas, [[t[i], x[i], y[i]]], axis = 0)
+    mas = np.append(mas, [[t[i], x[i], y[i]]], axis = 0) # первая ось которая равна направлению вниз по строчкам
 print(mas)
-
-# mas = [["x", "y", "z"]]
-# for t in range(0, 6):
-#     x = x0 + v0x * t
-#     y = y0 + v0x * t - g * t**2 / 2
-#     mas.append([t, x, y])
-
-# mas = np.array(mas)
-# print(mas)
